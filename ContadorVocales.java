@@ -16,7 +16,7 @@ public class ContadorVocales{
             }
         }
         System.out.println("La cantidad de vocales en la frase es: " + contador);
-        sc.close();
+        
 
     }
 }
