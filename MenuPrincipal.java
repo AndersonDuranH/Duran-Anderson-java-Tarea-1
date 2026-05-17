@@ -11,6 +11,7 @@ public class MenuPrincipal {
         ContadorVocales contador = new ContadorVocales();
         ClaseEstudiante estudiante = new ClaseEstudiante();
         CuentaBancaria cuentas = new CuentaBancaria();
+        HerenciaVehiculos vehiculo = new HerenciaVehiculos();
         
         System.out.println("=======================================");
         System.out.println("=====Bienvenido al Menu Principal======");
@@ -66,7 +67,7 @@ public class MenuPrincipal {
                 cuentas.CuentaBancaria(sc);
                 break;
             case 8:
-                
+                vehiculo.HerenciaVehiculos(sc);
                 break;
             case 9:
                 
