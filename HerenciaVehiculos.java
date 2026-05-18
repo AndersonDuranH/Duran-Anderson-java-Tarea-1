@@ -3,84 +3,12 @@ import java.util.Scanner;
 
 public class HerenciaVehiculos {
 
-    static class Vehiculo {
-        private  String marca;
-        private int año;
-        private String modelo;
-
-        public Vehiculo(String marca, int año, String modelo) {
-            this.marca = marca;
-            this.año = año;
-            this.modelo = modelo;
-        }
-
-        public void mostrarDatos() {
-            System.out.println("Marca: " + marca);
-            System.out.println("Año: " + año);
-            System.out.println("Modelo: " + modelo);
-        }
-    }
-
-    static class Carro extends Vehiculo {
-        private int puertas;
-
-        public Carro(String marca, int año, String modelo, int puertas) {
-            super(marca, año, modelo);
-            this.puertas = puertas;
-        }
-
-        @Override
-        public void mostrarDatos() {
-            super.mostrarDatos();
-        }
-    }
-
-    static class Camioneta extends Vehiculo {
-        private double capacidadCarga;
-
-        public Camioneta(String marca, int año, String modelo, double capacidadCarga) {
-            super(marca, año, modelo);
-            this.capacidadCarga = capacidadCarga;
-        }
-
-        @Override
-        public void mostrarDatos() {
-            super.mostrarDatos();
-        }
-    }
-
-    static class Motocicleta extends Vehiculo {
-        private int cilindrada;
-
-        public Motocicleta(String marca, int año, String modelo, int cilindrada) {
-            super(marca, año, modelo);
-            this.cilindrada = cilindrada;
-        }
-
-        @Override
-        public void mostrarDatos() {
-            super.mostrarDatos();
-        }
-    }
-
-    static class Barco extends Vehiculo {
-        private String tipo;
-
-        public Barco(String marca, int año, String modelo, String tipo) {
-            super(marca, año, modelo);
-            this.tipo = tipo;
-        }
-
-        @Override
-        public void mostrarDatos() {
-            super.mostrarDatos();
-        }
-    }
+    
 
     public static void HerenciaVehiculos(Scanner sc) {
 
         ArrayList<Vehiculo> vehiculos = new ArrayList<>();
-
+       System.out.println();
         for (int i = 1; i <= 2; i++) {
 
             System.out.println("1. Barco");
@@ -134,9 +62,11 @@ public class HerenciaVehiculos {
             }
         }
 
+        System.out.println();
         for (Vehiculo v : vehiculos) {
             System.out.println("==============================");
             v.mostrarDatos();
         }
+        System.out.println();
     }
 }

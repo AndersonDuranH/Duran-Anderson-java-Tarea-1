@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class MenuPrincipal {
+public class Menu {
     public static void main(String[] args) {
         int opcion;
         Scanner sc = new Scanner(System.in);
@@ -12,6 +12,8 @@ public class MenuPrincipal {
         ClaseEstudiante estudiante = new ClaseEstudiante();
         CuentaBancaria cuentas = new CuentaBancaria();
         HerenciaVehiculos vehiculo = new HerenciaVehiculos();
+        Matriz3x3 matriz = new Matriz3x3();
+        SistemaBasicoInventario sistema = new SistemaBasicoInventario();
         
         System.out.println("=======================================");
         System.out.println("=====Bienvenido al Menu Principal======");
@@ -30,11 +32,11 @@ public class MenuPrincipal {
         System.out.println("||-----------------------------------||");
         System.out.println("||7.-Cuenta Bancaria                -||");
         System.out.println("||-----------------------------------||");
-        System.out.println("||8.-Herencia de vehículos          -||");
+        System.out.println("||8.-Herencia de vehiculos          -||");
         System.out.println("||-----------------------------------||");
         System.out.println("||9.-Matriz 3x3                     -||");
         System.out.println("||-----------------------------------||");
-        System.out.println("||10.-Sistema básico de inventario  -||");
+        System.out.println("||10.-Sistema basico de inventario  -||");
         System.out.println("||-----------------------------------||");
         System.out.println("||11.-Salir De La Aplicacion        -||");
         System.out.println("||-----------------------------------||");
@@ -53,6 +55,7 @@ public class MenuPrincipal {
                  tabla.TablaMultiplicacion(sc);
                 break;
             case 4:
+                sc.nextLine();
                 contador.ContadorVocales(sc);
                 break;
             case 5:
@@ -70,12 +73,11 @@ public class MenuPrincipal {
                 vehiculo.HerenciaVehiculos(sc);
                 break;
             case 9:
-                
+                matriz.Mostrar(sc);
                 break;
             case 10:
-                
+                sistema.Mostrar(sc);
                 break;
-
             case 11:
                 System.out.println("Salir de la Aplicacion");
                 break;

@@ -2,6 +2,7 @@ import java.util.Scanner;
 public class ContadorVocales{
     
     public void ContadorVocales(Scanner sc){
+        System.out.println();
         System.out.print("Digite una frase: ");
         String frase = sc.nextLine();
 
@@ -15,8 +16,11 @@ public class ContadorVocales{
                 contador++;
             }
         }
+        System.out.println();
+        System.out.println("==========================================");
         System.out.println("La cantidad de vocales en la frase es: " + contador);
-        
+        System.out.println("==========================================");
+        System.out.println();
 
     }
 }

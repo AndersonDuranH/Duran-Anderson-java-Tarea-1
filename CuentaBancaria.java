@@ -94,7 +94,7 @@ public class CuentaBancaria{
 
         cuentas.add(c);
     }
-
+    System.out.println();
     for(CuentaBancaria cb : cuentas){
         System.out.println("==============================");
         System.out.println("Tipo de Cuenta: " + cb.getTipoCuenta());
@@ -105,6 +105,7 @@ public class CuentaBancaria{
         System.out.println("Correo Electronico: " + cb.getCorreoElectronico());
         System.out.println("==============================");
     }
+    System.out.println();
 }
 
 

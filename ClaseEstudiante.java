@@ -77,12 +77,14 @@ public class ClaseEstudiante{
 
         for(ClaseEstudiante e : estudiantes)
 {
+    System.out.println();
     System.out.println("==============================");
     System.out.println("Nombre: " + e.getNombre());
     System.out.println("Edad: " + e.getEdad());
     System.out.println("Carnet: " + e.getCarnet());
     System.out.println("Carrera: " + e.getCarrera());
     System.out.println("==============================");
+    System.out.println();
 }
         
 
