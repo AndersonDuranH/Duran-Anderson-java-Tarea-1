@@ -38,12 +38,14 @@ Salir de la aplicación
 Finaliza la ejecución del programa.
 
 ## TECNOLOGIAS UTILIZADAS
-Java
-JDK 25
+Java,
+JDK 25,
 Visual Studio Code
 
+### Estructura del Proyecto
+
+```text
 Tarea#1
-│
 ├── src
 │   ├── Barco.java
 │   ├── Calculadora.java
@@ -62,7 +64,6 @@ Tarea#1
 │   ├── SistemaBasicoInventario.java
 │   ├── TablaMultiplicacion.java
 │   └── Vehiculo.java
-│
 ├── evidencias
 │   ├── Captura de pantalla 2026-05-17 200306.png
 │   ├── Captura de pantalla 2026-05-17 200353.png
@@ -74,7 +75,6 @@ Tarea#1
 │   ├── Captura de pantalla 2026-05-17 201539.png
 │   ├── Captura de pantalla 2026-05-17 201754.png
 │   └── Captura de pantalla 2026-05-17 202151.png
-│
 └── README.md
 
 
